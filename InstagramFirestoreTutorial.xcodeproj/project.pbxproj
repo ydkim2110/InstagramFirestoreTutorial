@@ -13,6 +13,14 @@
 		4926CFD7261692D100810693 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4926CFD5261692D100810693 /* Main.storyboard */; };
 		4926CFD9261692D200810693 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4926CFD8261692D200810693 /* Assets.xcassets */; };
 		4926CFDC261692D200810693 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4926CFDA261692D200810693 /* LaunchScreen.storyboard */; };
+		4926CFEB261693A100810693 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926CFEA261693A100810693 /* MainTabController.swift */; };
+		4926CFF0261694CE00810693 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926CFEF261694CE00810693 /* FeedController.swift */; };
+		4926CFF3261694D500810693 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926CFF2261694D500810693 /* SearchController.swift */; };
+		4926CFF6261694DE00810693 /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926CFF5261694DE00810693 /* ImageSelectorController.swift */; };
+		4926CFF9261694E600810693 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926CFF8261694E600810693 /* NotificationsController.swift */; };
+		4926CFFC261694F200810693 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926CFFB261694F200810693 /* ProfileController.swift */; };
+		49F3C2F326169D75007C0E22 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3C2F226169D75007C0E22 /* FeedCell.swift */; };
+		49F3C2F626169E6C007C0E22 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3C2F526169E6C007C0E22 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		4926CFD8261692D200810693 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4926CFDB261692D200810693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4926CFDD261692D200810693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4926CFEA261693A100810693 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		4926CFEF261694CE00810693 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		4926CFF2261694D500810693 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		4926CFF5261694DE00810693 /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
+		4926CFF8261694E600810693 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		4926CFFB261694F200810693 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		49F3C2F226169D75007C0E22 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		49F3C2F526169E6C007C0E22 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,12 @@
 		4926CFCE261692D100810693 /* InstagramFirestoreTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				4926CFE92616930F00810693 /* Utils */,
+				4926CFE82616930C00810693 /* API */,
+				4926CFE72616930A00810693 /* Controller */,
+				4926CFE62616930700810693 /* ViewModel */,
+				4926CFE52616930500810693 /* View */,
+				4926CFE4261692F500810693 /* Model */,
 				4926CFCF261692D100810693 /* AppDelegate.swift */,
 				4926CFD1261692D100810693 /* SceneDelegate.swift */,
 				4926CFD3261692D100810693 /* ViewController.swift */,
@@ -65,6 +87,56 @@
 				4926CFDD261692D200810693 /* Info.plist */,
 			);
 			path = InstagramFirestoreTutorial;
+			sourceTree = "<group>";
+		};
+		4926CFE4261692F500810693 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4926CFE52616930500810693 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49F3C2F226169D75007C0E22 /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4926CFE62616930700810693 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4926CFE72616930A00810693 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4926CFEA261693A100810693 /* MainTabController.swift */,
+				4926CFEF261694CE00810693 /* FeedController.swift */,
+				4926CFF2261694D500810693 /* SearchController.swift */,
+				4926CFF5261694DE00810693 /* ImageSelectorController.swift */,
+				4926CFF8261694E600810693 /* NotificationsController.swift */,
+				4926CFFB261694F200810693 /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4926CFE82616930C00810693 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4926CFE92616930F00810693 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				49F3C2F526169E6C007C0E22 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4926CFEB261693A100810693 /* MainTabController.swift in Sources */,
+				49F3C2F326169D75007C0E22 /* FeedCell.swift in Sources */,
+				4926CFF6261694DE00810693 /* ImageSelectorController.swift in Sources */,
+				4926CFF9261694E600810693 /* NotificationsController.swift in Sources */,
+				4926CFF3261694D500810693 /* SearchController.swift in Sources */,
 				4926CFD4261692D100810693 /* ViewController.swift in Sources */,
+				4926CFFC261694F200810693 /* ProfileController.swift in Sources */,
+				4926CFF0261694CE00810693 /* FeedController.swift in Sources */,
 				4926CFD0261692D100810693 /* AppDelegate.swift in Sources */,
+				49F3C2F626169E6C007C0E22 /* Extensions.swift in Sources */,
 				4926CFD2261692D100810693 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
